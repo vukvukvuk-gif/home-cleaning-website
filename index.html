@@ -4,50 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Cleaning Services</title>
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; }
-        header { background: #333; color: #fff; padding: 10px 0; text-align: center; }
-        section { padding: 20px; }
-        footer { text-align: center; padding: 10px 0; background: #333; color: #fff; }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Home Cleaning Services</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Your Trusted Home Cleaning Service</h1>
+            <p>Explore our wide range of cleaning services for your home.</p>
+            <a href="#contact" class="btn">Get a Free Quote</a>
+        </div>
     </header>
-    <section>
-        <h2>Our Services</h2>
-        <ul>
-            <li>Residential Cleaning</li>
-            <li>Commercial Cleaning</li>
-            <li>Deep Cleaning</li>
-            <li>Move In/Out Cleaning</li>
-            <li>Special Event Cleaning</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Customer Reviews</h2>
-        <blockquote>
-            <p>"Fantastic service! Highly recommend for anyone looking for cleaning services." - Jane D.</p>
-        </blockquote>
-        <blockquote>
-            <p>"The team was professional and did an amazing job at our home." - John S.</p>
-        </blockquote>
-    </section>
-    <section>
-        <h2>Contact Us</h2>
-        <form action="https://formspree.io/f/{your_form_id}" method="POST">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" required></textarea><br>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+    <main>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service-overview">
+                <div class="service">
+                    <h3>Regular Cleaning</h3>
+                    <p>Keeping your home clean on a regular basis.</p>
+                </div>
+                <div class="service">
+                    <h3>Deep Cleaning</h3>
+                    <p>Thorough cleaning for a fresh start.</p>
+                </div>
+                <div class="service">
+                    <h3>Move In/Out Cleaning</h3>
+                    <p>Making your moving process easier.</p>
+                </div>
+            </div>
+        </section>
+        <section id="trust-indicators">
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li>Trusted by over 500 clients</li>
+                <li>Experienced and trained staff</li>
+                <li>100% satisfaction guarantee</li>
+            </ul>
+        </section>
+        <section id="reviews">
+            <h2>Customer Reviews</h2>
+            <blockquote>
+                <p>"Excellent service! My home has never looked better." - Jane D.</p>
+            </blockquote>
+            <blockquote>
+                <p>"Professional and thorough. Highly recommend!" - John S.</p>
+            </blockquote>
+        </section>
+        <section id="how-it-works">
+            <h2>How It Works</h2>
+            <p>Booking a cleaning service is simple:</p>
+            <ol>
+                <li>Choose your service.</li>
+                <li>Pick a date and time.</li>
+                <li>We handle the rest!</li>
+            </ol>
+        </section>
+        <section id="contact">
+            <h2>Get a Free Quote</h2>
+            <form action="https://formspree.io/f/mjvqkqdb" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2026 Home Cleaning Services</p>
+        <p>&copy; 2026 Home Cleaning Services. All rights reserved.</p>
     </footer>
 </body>
 </html>
